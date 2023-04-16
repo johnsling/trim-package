@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="fontawe/css/all.min.css">
+    <title>Progressive Service</title>
+</head>
+<body>
+
+    <script src="./data/com60.js"></script>
+    <script src="data/hilux/LAN25.js"></script>
+    <script src="data/hilux/LAN15.js"></script>
+    <script src="data/hilux/LAN125.js"></script>
+    <script src="data/hilux/KUN126.js"></script>
+    <script src="data/hilux/GUN125.js"></script>
+    <script src="data/hilux/TGN126.js"></script>
+    <script src="data/fortuna/LAN50.js"></script>
+    <script src="data/fortuna/TGN51.js"></script>
+    <script src="data/fortuna/TGN156.js"></script>
+    <script src="data/fortuna/LAN156.js"></script>
+    <script src="data/fortuna/KUN156.js"></script>
+    <script src="data/buses/GDH322.js"></script>
+    <script src="data/buses/LH202.js"></script>
+    <script src="data/prado/TRJ150.js"></script>
+    <script src="data/prado/LJ150.js"></script>
+    <script src="data/prado/KDJ150.js"></script>
+    <script src="data/prado/GDJ150.js"></script>
+    <script src="data/landcruiser/VDJ200.js"></script>
+    <script src="data/landcruiser/FJA300.js"></script>
+    <script src="data/landcruiser/HZJ78.js"></script>
+
+
+    <nav class="sidebar">
+        <div class="sidebar-items">
+            <div class="sidebar-toggle">
+                <a href="#" class="menu-arrow" id="hide-menu">
+                    <i class="fa-solid fa-left-long sidebar-icon"></i>
+                </a>
+                <!-- <i class="fa-solid fa-right-long sidebar-icon"></i> -->
+                <a href="#">
+                    <h1><i class="fa-solid fa-wrench" id="trim-logo"></i>Trim Service</h1>
+                </a>
+            </div>
+            <hr>
+            <ul class="sidebar-section">
+                <!-- <li class="models ">
+                    <a href="#" class="saloon-btn">Saloon <i class="fa-solid fa-caret-down sixth"></i></a>
+                    <ul class="model-details all-tooltips ">
+                        <li class="reveal-tooltip tooltip tooltip2 ">
+                            <a href="#" class="pin">AVENSIS</a>
+                            <div class="img">
+                                <img width="40" src="./images/saloon/AVENSIS.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 ">
+                            <a href="#" class="pin">CAMRY</a>
+                            <div class="img">
+                                <img width="45" src="./images/saloon/CAMRY.png" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 ">
+                            <a href="#" class="pin">COROLLA 1.6L</a>
+                            <div class="img">
+                                <img width="55" height="25" src="./images/saloon/COROLLA 1.6L.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 ">
+                            <a href="#" class="pin">COROLLA 1.8L</a>
+                            <div class="img">
+                                <img width="50" src="./images/saloon/COROLLA 1.8L.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 ">
+                            <a href="#" class="pin">COROLLA CROSS</a>
+                            <div class="img">
+                                <img width="45" src="./images/saloon/COROLLA CROSS.png" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 ">
+                            <a href="#" class="pin">RAV4</a>
+                            <div class="img">
+                                <img width="45" src="./images/saloon/RAV4.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </li> -->
+                <li class="models active">
+                    <a href="#" class="IMV-btn">IMV Hilux <i class="fa-solid fa-caret-down first"></i></a>
+                    <ul class="model-details all-tooltips ">
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemHiluxLAN15" onclick="generateShop(shopItemsHiluxLAN15); changeImageAndCaption(captionHiluxLAN15)">
+                            <a href="#" class="pin">LAN15</a>
+                            <div class="img">
+                                <img width="45" src="./images/hilux/LAN15.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemHiluxLAN25" onclick="generateShop(shopItemsHiluxLAN25); changeImageAndCaption(captionHiluxLAN25)">
+                            <a href="#" class="pin" >LAN25</a>
+                            <div class="img">
+                                <img width="45" src="./images/hilux/LAN25.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemHiluxLAN125" onclick="generateShop(shopItemsHiluxLAN125); changeImageAndCaption(captionHiluxLAN125)">
+                            <a href="#" class="pin">LAN125</a>
+                            <div class="img">
+                                <img width="55" height="25" src="./images/hilux/LAN125.png" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemHiluxGUN125" onclick="generateShop(shopItemsHiluxGUN125); changeImageAndCaption(captionHiluxGUN125)">
+                            <a href="#" class="pin">GUN125 & 126</a>
+                            <div class="img">
+                                <img width="50" src="./images/hilux/GUN125.126.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemHiluxKUN126" onclick="generateShop(shopItemsHiluxKUN126); changeImageAndCaption(captionHiluxKUN126)">
+                            <a href="#" class="pin">KUN126</a>
+                            <div class="img">
+                                <img width="50" src="./images/hilux/KUN126.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemHiluxTGN126" onclick="generateShop(shopItemsHiluxTGN126); changeImageAndCaption(captionHiluxTGN126)">
+                            <a href="#" class="pin">TGN126</a>
+                            <div class="img">
+                                <img width="45" src="./images/hilux/TGN126.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="models ">
+                    <a href="#" class="fort-btn">Fortuner <i class="fa-solid fa-caret-down second"></i></a>
+                    <ul class="model-details all-tooltips ">
+                        <li class="reveal-tooltip tooltip tooltip2 " id="shopItemFortunaLAN50" onclick="generateShop(shopItemsFortunaLAN50); changeImageAndCaption(captionFortunaLAN50)">
+                            <a href="#" class="pin">LAN50</a>
+                            <div class="img">
+                                <img width="40" src="./images/fortuner/LAN50.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemFortunaLAN156" onclick="generateShop(shopItemsFortunaLAN156); changeImageAndCaption(captionFortunaLAN156)">
+                            <a href="#" class="pin">LAN156</a>
+                            <div class="img">
+                                <img width="45" src="./images/fortuner/LAN156.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemFortunaTGN51" onclick="generateShop(shopItemsFortunaTGN51); changeImageAndCaption(captionFortunaTGN51)">
+                            <a href="#" class="pin">TGN51</a>
+                            <div class="img">
+                                <img width="55" height="25" src="./images/fortuner/TGN51.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemFortunaTGN156" onclick="generateShop(shopItemsFortunaTGN156); changeImageAndCaption(captionFortunaTGN156)">
+                            <a href="#" class="pin">TGN156</a>
+                            <div class="img">
+                                <img width="50" src="./images/fortuner/TGN156.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemFortunaKUN156" onclick="generateShop(shopItemsFortunaKUN156); changeImageAndCaption(captionFortunaKUN156)">
+                            <a href="#" class="pin">KUN156</a>
+                            <div class="img">
+                                <img width="45" src="./images/fortuner/KUN156.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="models ">
+                    <a href="#" class="prado-btn">Prado <i class="fa-solid fa-caret-down third"></i></a>
+                    <ul class="model-details all-tooltips ">
+                        <li class="reveal-tooltip tooltip tooltip3 " id="shopItemPradoTRJ150" onclick="generateShop(shopItemsPradoTRJ150); changeImageAndCaption(captionPradoTRJ150)">
+                            <a href="#" class="pin">TRJ150</a>
+                            <div class="img">
+                                <img width="45" src="./images/prado/TRJ150.png" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemPradoLJ150" onclick="generateShop(shopItemsPradoLJ150); changeImageAndCaption(captionPradoLJ150)">
+                            <a href="#" class="pin">LJ150</a>
+                            <div class="img">
+                                <img width="45" src="./images/prado/TRJ150.png" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemPradoKDJ150" onclick="generateShop(shopItemsPradoKDJ150); changeImageAndCaption(captionPradoKDJ150)">
+                            <a href="#" class="pin">KDJ150</a>
+                            <div class="img">
+                                <img width="45" src="./images/prado/KDJ150.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemPradoGDJ150" onclick="generateShop(shopItemsPradoGDJ150); changeImageAndCaption(captionPradoGDJ150)">
+                            <a href="#" class="pin">GDJ150</a>
+                            <div class="img">
+                                <img width="45" src="./images/prado/GDJ150.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="models ">
+                    <a href="#" class="lc-btn">Land Cruiser Series <i class="fa-solid fa-caret-down fourth"></i></a>
+                    <ul class="model-details all-tooltips ">
+                        <li class="reveal-tooltip tooltip tooltip4 " id="shopItemLandCruiserVDJ200" onclick="generateShop(shopItemsLandCruiserVDJ200); changeImageAndCaption(captionLandCruiserVDJ200)">
+                            <a href="#" class="pin">VDJ200</a>
+                            <div class="img">
+                                <img width="45" src="./images/land cruiser/VDJ200.png" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemLandCruiserFJA300" onclick="generateShop(shopItemsLandCruiserFJA300); changeImageAndCaption(captionLandCruiserFJA300)">
+                            <a href="#" class="pin">FJA300</a>
+                            <div class="img">
+                                <img width="45" src="./images/land cruiser/FJA300.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemLandCruiserHZJ78" onclick="generateShop(shopItemsLandCruiserHZJ78); changeImageAndCaption(captionLandCruiserHZJ78)">
+                            <a href="#" class="pin">HZJ78</a>
+                            <div class="img">
+                                <img width="45" src="./images/land cruiser/HZJ70.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="models ">
+                    <a href="#" class="fort-btn">Buses & Trucks <i class="fa-solid fa-caret-down fifth"></i></a>
+                    <ul class="model-details all-tooltips ">
+                        <li class="reveal-tooltip tooltip tooltip2 " id="shopItemHiaceLH202" onclick="generateShop(shopItemsHiaceLH202); changeImageAndCaption(captionHiaceLH202)">
+                            <a href="#" class="pin">HAICE STD</a>
+                            <div class="img">
+                                <img width="40" src="./images/bus & truck/HAICE STD.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 " id="shopItemHiaceGDH322" onclick="generateShop(shopItemsHiaceGDH322); changeImageAndCaption(captionHiaceGDH322)">
+                            <a href="#" class="pin">HAICE HIGHR</a>
+                            <div class="img">
+                                <img width="45" src="./images/bus & truck/HAICE HIGHR.jpg" alt="">
+                            </div>
+                        </li>
+                        <!-- <li class="reveal-tooltip tooltip tooltip1 ">
+                            <a href="#" class="pin">COASTER</a>
+                            <div class="img">
+                                <img width="55" height="25" src="./images/bus & truck/COASTER.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 ">
+                            <a href="#" class="pin">HINO 3.5</a>
+                            <div class="img">
+                                <img width="50" src="./images/bus & truck/HINO 3.5.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 ">
+                            <a href="#" class="pin">HINO 5.5</a>
+                            <div class="img">
+                                <img width="45" src="./images/bus & truck/HINO 5.5.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="reveal-tooltip tooltip tooltip1 ">
+                            <a href="#" class="pin">HINO 7.5</a>
+                            <div class="img">
+                                <img width="45" src="./images/bus & truck/HINO 7.5.png" alt="">
+                            </div>
+                        </li> -->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="div-tooltip"></div>
+
+
+    <div class="navBar">
+        <a href="#">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <div class="model-display">
+            <img width="110" height="75" id="bannerImage" src="./images/hilux/LAN25.jpg" alt="">
+            <p id="bannerCaption"></p>
+        </div>
+
+        <a href="cart.html">
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div id="cartAmount" class="cartAmount">0</div>
+            </div>
+        </a>   
+    </div>
+
+    <div class="tableContainer" id="tableContainer">
+        <div class="modelCaption">
+            <h3 id="modelCaptionTitle"></h3>
+            <h4>(Engine Oil Grade)</h4>
+            <hr>
+        </div>
+        <table class="myTable" id="myTable">
+            <thead>
+                <tr>
+                    <th>Before 2015</th>
+                    <th>2015 - 2020</th>
+                    <th>After 2020</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="shop" id="shop">
+
+    </div>
+</body>
+
+
+<script src="src/main.js"></script>
+</html>

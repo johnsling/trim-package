@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="fontawe/css/all.min.css">
+    <title>Progressive Service</title>
+</head>
+<body>
+    <script src="./data/com60.js"></script>
+    <script src="data/hilux/LAN25.js"></script>
+    <script src="data/hilux/LAN15.js"></script>
+    <script src="data/hilux/LAN125.js"></script>
+    <script src="data/hilux/KUN126.js"></script>
+    <script src="data/hilux/GUN125.js"></script>
+    <script src="data/fortuna/LAN50.js"></script>
+    <script src="data/fortuna/TGN51.js"></script>
+    <script src="data/fortuna/TGN156.js"></script>
+    <script src="data/fortuna/LAN156.js"></script>
+    <script src="data/fortuna/KUN156.js"></script>
+    <script src="data/buses/GDH322.js"></script>
+    <script src="data/buses/LH202.js"></script>
+    <script src="data/prado/TRJ150.js"></script>
+    <script src="data/prado/LJ150.js"></script>
+    <script src="data/prado/KDJ150.js"></script>
+    <script src="data/prado/GDJ150.js"></script>
+    <script src="data/landcruiser/VDJ200.js"></script>
+    <script src="data/landcruiser/FJA300.js"></script>
+    <script src="data/landcruiser/HZJ78.js"></script>
+
+
+    <div class="navBar">
+        <a href="index.html">
+            <h2>TRIM MENU</h2>
+        </a>
+
+        <div class="model-display">
+            <img width="110" height="75" id="bannerImage" src="./images/hilux/LAN25.jpg" alt="">
+            <p id="bannerCaption"></p>
+        </div>
+
+        <a href="cart.html">
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div id="cartAmount" class="cartAmount">0</div>
+            </div>
+        </a>   
+    </div>  
+
+    
+
+    <div class="tableContainer" id="tableContainer">
+        <div class="modelCaption">
+            <h3 id="modelCaptionTitle"></h3>
+            <h4>(Engine Oil Grade)</h4>
+            <hr>
+        </div>
+        <table class="myTable" id="myTable">
+            <thead>
+                <tr>
+                    <th>Before 2015</th>
+                    <th>2015 - 2020</th>
+                    <th>After 2020</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div id="empty-label" class="text-center"></div>
+    <div class="clearCheckOut" id="clearCheckOut"></div>
+
+    <div class="wrapper-container" id="wrapper-container">
+
+        <div class="shopping-cart-container">
+            <div id="shopping-cart" class="shopping-cart"></div>
+            <div id="shopping-cart-label" class="shopping-cart-label">
+                <p id="labor-Amount" class="labor-Amount calc-amount"></p>
+                <hr>
+                <p id="parts-Amount" class="parts-Amount calc-amount"></p>
+                <hr>
+                <p id="net-Amount" class="net-Amount calc-amount"></p>
+                <hr>
+                <p id="levies-Amount" class="levies-Amount calc-amount"></p>
+                <hr>
+                <p id="sub-Total-Amount" class="sub-Total-Amount calc-amount"></p>
+                <hr>
+                <p id="VAT-Amount" class="VAT-Amount calc-amount"></p>
+                <hr>
+                <p id="TOTAL-Amount" class="TOTAL-Amount calc-amount"></p>
+                <hr>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+<!-- <script src="data/hilux/LAN25.js"></script> -->
+<!-- <script src="data/hilux/LAN15.js"></script> -->
+<script src="src/cart.js"></script>
+</html>
